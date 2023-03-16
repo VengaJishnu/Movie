@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block body %}
+<!--block body we are using to show this codes mentioned in that particular position-->
+<!--navbar means navigatio bar theese codes are readily available in the internet only need to do cop paste-->
+<!--here {{i.id}}  we are using like when ever we are clicking on that corresponding id will move there-->
+<div class="container">
+<!--    here we are pasting as a container in row wisw as co md 3 in 3 coloumn-->
+<!--    this one is known as bootstrap card-->
+    <div class="row">
+      {% for i in movie %}
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{i.img4.url}}" alt="Card image cap" width="300" height="300">
+  <div class="card-body">
+    <h5 class="card-title">{{i.name1}}</h5>
+    <p class="card-text">{{i.desc3}}</p>
+    <a href="{% url 'movie_id' i.id %}" class="btn btn-primary">Go to details</a>
+  </div>
+</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+    <a href="https:www.google.com">serach engine</a>
+{% endblock %}

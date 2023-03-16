@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+{% block body %}
+<form method="POST" enctype="multipart/form-data">
+   {% csrf_token %}
+  <input type="text" name="name1" placeholder="enter the movie name">
+  <input type="text" name="budget2" placeholder="enter the budget ">
+  <input type="text" name="desc3" placeholder="enter the movie description">
+  <input type="file" name="img4">
+  <input type="submit">
+{% endblock %}
+
+  <!--  here we are adding enctype because html dont knoe from where the image is coming or filr-->

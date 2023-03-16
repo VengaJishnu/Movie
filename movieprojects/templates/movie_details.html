@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block body %}
+<!--this is to call the html function why we did is like to avoid more codes-->
+<div class="container">
+    <div class="row">
+    <div class="col=md-6">
+        <img src="{{movie1.img4.url}}" width="300" height="200"> <br><br><br>
+        <a class="btn btn-warning" href="{% url 'edit' movie1.id %}">UPDATE</a>
+        <a class="btn btn-danger" href="{% url 'delete' movie1.id %}">DELETE</a>
+        <div>
+            <br>
+         <a class="btn btn-warning" href="/" >HOME</a>
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+       <H2>{{movie1.name1}}</H2> <br>
+        {{movie1.budget2}}<br>
+        {{movie1.desc3}}<br>
+
+    </div>
+</div>
+</div>
+<!--{{movie1.name1}}<br>-->
+<!--{{movie1.budget2}}<br>-->
+<!--{{movie1.desc3}}<br>-->
+
+
+{% endblock %}
+
+<!--this block function is to define where actually this code should run-->

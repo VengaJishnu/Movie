@@ -1,0 +1,5 @@
+<!--    <img src="{{i.img4.url}}" width="200" height="200"><br>-->
+<!--    <a href="{{i.id}}/">{{i.name1}}</a>     <br>-->
+<!--    <a href="{% url //'movie_id'// i.id %} ">{{i.desc3}}</a><br><br><br>-->
+<!--these 2 are two different method-->
+< these are the codes for href link
